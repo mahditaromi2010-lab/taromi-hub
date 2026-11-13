@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>خانواده طارمی · مهدی، فاطمه و محسن</title>
+<meta name="description" content="صفحه خانواده طارمی از شیراز: مهدی طارمی (توسعه‌دهنده وب)، فاطمه امامدادی طارمی (مهندس مکانیک) و محسن امامدادی طارمی (راننده وسایل نقلیه سنگین). سایت هر نفر را از اینجا باز کنید.">
+<link rel="canonical" href="https://mahditaromi2010-lab.github.io/taromi-hub/fa/">
+<link rel="alternate" hreflang="en" href="https://mahditaromi2010-lab.github.io/taromi-hub/">
+<link rel="alternate" hreflang="fa" href="https://mahditaromi2010-lab.github.io/taromi-hub/fa/">
+<link rel="alternate" hreflang="x-default" href="https://mahditaromi2010-lab.github.io/taromi-hub/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="خانواده طارمی">
+<meta property="og:description" content="سایت‌های شخصی مهدی، فاطمه و محسن طارمی.">
+<meta property="og:url" content="https://mahditaromi2010-lab.github.io/taromi-hub/fa/">
+<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f141c" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"خانواده طارمی","url":"https://mahditaromi2010-lab.github.io/taromi-hub/","inLanguage":["fa","en"],
+ "about":[
+  {"@type":"Person","name":"Mahdi Taromi","jobTitle":"Web developer","url":"https://mahditaromi2010-lab.github.io/mahdi.taromi/","sameAs":["https://github.com/mahditaromi2010-lab","https://sentinelweb.ir/mahdi-taromi"]},
+  {"@type":"Person","name":"Fatemeh Emamdadi Taromi","jobTitle":"Mechanical engineer","url":"https://novingity.ir"},
+  {"@type":"Person","name":"Mohsen Emamdadi Taromi","jobTitle":"Heavy-vehicle driver","url":"https://mahditaromi2010-lab.github.io/mohsen.taromi/"}]}
+</script>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#people">رفتن به افراد</a>
+<header class="top">
+  <a class="brand" href="./" aria-label="صفحه اصلی خانواده طارمی">طارمی</a>
+  <nav aria-label="زبان"><a href="../" lang="en" hreflang="en">English</a></nav>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow">شیراز، ایران</p>
+    <h1>خانواده طارمی؛ سه نفر، سه سایت.</h1>
+    <p class="lead">این صفحه درِ ورودی است. هر کدام از ما سایت شخصی خودمان را با نمونه‌کار، مدارک و راه تماس داریم. یکی را انتخاب کنید تا باز شود.</p>
+  </section>
+
+  <section id="people" aria-labelledby="people-h">
+    <h2 id="people-h" class="sr-only">افراد</h2>
+    <ol class="people" id="grid"></ol>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>خانواده طارمی · <a href="https://github.com/mahditaromi2010-lab" rel="noopener">GitHub</a></p>
+</footer>
+
+<script src="../config.js"></script>
+<script>
+(function(){
+  var fa = document.documentElement.lang === 'fa';
+  var grid = document.getElementById('grid');
+  if (!window.FAMILY || !FAMILY.length) { grid.outerHTML = '<p class="muted">No people listed yet.</p>'; return; }
+  FAMILY.forEach(function(p, i){
+    var li = document.createElement('li'); li.className = 'person' + (i % 2 ? ' flip' : '');
+    var img = document.createElement('img');
+    img.src = (document.documentElement.lang === 'fa' ? '../' : '') + p.shot; img.width = 640; img.height = 400; img.loading = i ? 'lazy' : 'eager';
+    img.alt = (fa ? 'پیش‌نمایش سایت ' + p.nameFa : 'Preview of ' + p.name + "'s site");
+    var fig = document.createElement('div'); fig.className = 'shot'; fig.appendChild(img);
+    var body = document.createElement('div'); body.className = 'body';
+    var h = document.createElement('h3'); h.textContent = fa ? p.nameFa : p.name;
+    var role = document.createElement('p'); role.className = 'role'; role.textContent = fa ? p.roleFa : p.role;
+    var a = document.createElement('a'); a.className = 'btn'; a.href = p.url; a.rel = 'noopener';
+    a.textContent = fa ? 'باز کردن سایت ' + p.nameFa.split(' ')[0] : 'Open ' + p.name.split(' ')[0] + "'s site";
+    body.append(h, role, a); li.append(fig, body); grid.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>
