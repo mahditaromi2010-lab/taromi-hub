@@ -10,6 +10,6 @@ window.FAMILY = [
     shot: "shots/fatemeh.svg" },
   { key: "mohsen", name: "Mohsen Emamdadi Taromi", nameFa: "محسن امامدادی طارمی",
     role: "Heavy-vehicle driver · Class 1 licence", roleFa: "راننده وسایل نقلیه سنگین · پایه یک",
-    url: "https://mahditaromi2010-lab.github.io/mohsen.taromi/", // later: https://mohsen.taromi.net
+    url: "https://mahditaromi2010-lab.github.io/Mohsen.Taromi/", // later: https://mohsen.taromi.net
     shot: "shots/mohsen.svg" }
 ];
