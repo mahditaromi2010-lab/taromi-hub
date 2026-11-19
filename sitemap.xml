@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://mahditaromi2010-lab.github.io/taromi-hub/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mahditaromi2010-lab.github.io/taromi-hub/"/>
-    <xhtml:link rel="alternate" hreflang="fa" href="https://mahditaromi2010-lab.github.io/taromi-hub/fa/"/></url>
-  <url><loc>https://mahditaromi2010-lab.github.io/taromi-hub/fa/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mahditaromi2010-lab.github.io/taromi-hub/"/>
-    <xhtml:link rel="alternate" hreflang="fa" href="https://mahditaromi2010-lab.github.io/taromi-hub/fa/"/></url>
+  <url><loc>https://family.taromi.net/</loc><xhtml:link rel="alternate" hreflang="en" href="https://family.taromi.net/"/><xhtml:link rel="alternate" hreflang="fa" href="https://family.taromi.net/fa/"/></url>
+  <url><loc>https://family.taromi.net/fa/</loc><xhtml:link rel="alternate" hreflang="en" href="https://family.taromi.net/"/><xhtml:link rel="alternate" hreflang="fa" href="https://family.taromi.net/fa/"/></url>
 </urlset>

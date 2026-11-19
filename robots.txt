@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://mahditaromi2010-lab.github.io/taromi-hub/sitemap.xml
+Sitemap: https://family.taromi.net/sitemap.xml
